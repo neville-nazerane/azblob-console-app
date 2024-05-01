@@ -13,16 +13,15 @@ string[] options = [
 string sourceDirectory = args.ElementAtOrDefault(2) ?? Directory.GetCurrentDirectory();
 
 string[] selectedOptions = [];
-
 if (args.Length > 2)
 {
     if (options.Contains(args[2]))
         selectedOptions = args.Skip(2).ToArray();
-    else if (options.Length > 3)
+    else if (args.Length > 3)
         selectedOptions = args.Skip(3).ToArray();
 }
 
-
+Console.WriteLine("\n\n\n");
 #endregion
 
 #region logic
@@ -30,9 +29,12 @@ if (args.Length > 2)
 var container = new BlobContainerClient(connectionString, containerName);
 
 // clean up if needed
-if (selectedOptions.Contains("ClearContents"))
+if (selectedOptions.Contains("EmptyContainer"))
+{
+    Console.WriteLine("Emptying container");
     await foreach (var blob in container.GetBlobsAsync())
         await container.GetBlobClient(blob.Name).DeleteAsync();
+}
 
 // uploading files
 var chunks = Directory.GetFiles(sourceDirectory).Chunk(5);
