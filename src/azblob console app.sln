@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzUpload", "AzUpload\AzUplo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzUploadTool", "AzUploadTool\AzUploadTool.csproj", "{2C59CDF7-B3A8-4C2F-9697-24C4CC3EEFE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzBlobTool", "AzBlobTool\AzBlobTool.csproj", "{C9D34232-5162-4A6F-ADED-91F61FB0C349}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{2C59CDF7-B3A8-4C2F-9697-24C4CC3EEFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C59CDF7-B3A8-4C2F-9697-24C4CC3EEFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C59CDF7-B3A8-4C2F-9697-24C4CC3EEFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D34232-5162-4A6F-ADED-91F61FB0C349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D34232-5162-4A6F-ADED-91F61FB0C349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D34232-5162-4A6F-ADED-91F61FB0C349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D34232-5162-4A6F-ADED-91F61FB0C349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
